@@ -127,6 +127,5 @@ app.delete('/students/:studentId/library-membership', async (c) => {
   });
   return c.json({ message: 'Library membership deleted' });
 });
-// Use the Hono app with a Node.js server
 serve(app);
 console.log('Server running on http://localhost:3000');
